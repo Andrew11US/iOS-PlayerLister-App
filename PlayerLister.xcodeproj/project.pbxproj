@@ -12,6 +12,8 @@
 		9009CD3C1E49125200D8C090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD3B1E49125200D8C090 /* Assets.xcassets */; };
 		9009CD3F1E49125200D8C090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD3D1E49125200D8C090 /* LaunchScreen.storyboard */; };
 		9009CD471E49153B00D8C090 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD461E49153B00D8C090 /* Player.swift */; };
+		9009CD491E49181200D8C090 /* ronaldo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD481E49181200D8C090 /* ronaldo.jpg */; };
+		9009CD4B1E491BD200D8C090 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD4A1E491BD200D8C090 /* PlayerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9009CD3E1E49125200D8C090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9009CD401E49125200D8C090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9009CD461E49153B00D8C090 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9009CD481E49181200D8C090 /* ronaldo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ronaldo.jpg; sourceTree = "<group>"; };
+		9009CD4A1E491BD200D8C090 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		9009CD331E49125200D8C090 /* PlayerLister */ = {
 			isa = PBXGroup;
 			children = (
+				9009CD4A1E491BD200D8C090 /* PlayerVC.swift */,
 				9009CD461E49153B00D8C090 /* Player.swift */,
 				9009CD341E49125200D8C090 /* AppDelegate.swift */,
+				9009CD481E49181200D8C090 /* ronaldo.jpg */,
 				9009CD381E49125200D8C090 /* Main.storyboard */,
 				9009CD3B1E49125200D8C090 /* Assets.xcassets */,
 				9009CD3D1E49125200D8C090 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9009CD3F1E49125200D8C090 /* LaunchScreen.storyboard in Resources */,
+				9009CD491E49181200D8C090 /* ronaldo.jpg in Resources */,
 				9009CD3C1E49125200D8C090 /* Assets.xcassets in Resources */,
 				9009CD3A1E49125200D8C090 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9009CD4B1E491BD200D8C090 /* PlayerVC.swift in Sources */,
 				9009CD471E49153B00D8C090 /* Player.swift in Sources */,
 				9009CD351E49125200D8C090 /* AppDelegate.swift in Sources */,
 			);

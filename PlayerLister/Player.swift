@@ -22,8 +22,18 @@ struct Player {
     
     static func createPlayers() -> [Player] {
         
-        let ronaldo = Player(name: "Ronaldo", age: 32, college: "college", height: 185, image: <#T##UIImage#>, backgroundColor: <#T##UIColor#>, textColor1: <#T##UIColor#>, textColor2: <#T##UIColor#>)
+        let ronaldo = Player(name: "Ronaldo", age: 32, college: "college", height: 185, image: UIImage(named: "ronaldo.jpg")!, backgroundColor: UIColor.cyan, textColor1: UIColor.darkGray, textColor2: UIColor(red: 0.192, green: 0.290, blue: 0.600, alpha: 1.00))
         
-        return []
+        let messi = Player(name: "Messi", age: 27, college: "college", height: 160, image: UIImage(named: "ronaldo.jpg")!, backgroundColor: UIColor.cyan, textColor1: UIColor.darkGray, textColor2: UIColor(red: 0.192, green: 0.290, blue: 0.600, alpha: 1.00))
+        
+        let suares = Player(name: "Suares", age: 29, college: "college", height: 185, image: UIImage(named: "ronaldo.jpg")!, backgroundColor: UIColor.cyan, textColor1: UIColor.darkGray, textColor2: UIColor(red: 0.192, green: 0.290, blue: 0.600, alpha: 1.00))
+        
+        let ramos = Player(name: "Ramos", age: 30, college: "college", height: 195, image: UIImage(named: "ronaldo.jpg")!, backgroundColor: UIColor.cyan, textColor1: UIColor.darkGray, textColor2: UIColor(red: 0.192, green: 0.290, blue: 0.600, alpha: 1.00))
+        
+        let pepe = Player(name: "Pepe", age: 26, college: "college", height: 185, image: UIImage(named: "ronaldo.jpg")!, backgroundColor: UIColor.cyan, textColor1: UIColor.darkGray, textColor2: UIColor(red: 0.192, green: 0.290, blue: 0.600, alpha: 1.00))
+        
+        return [ronaldo, messi, suares, ramos, pepe]
     }
+    
+    
 }
