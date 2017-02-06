@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="785" y="-237"/>
         </scene>
-        <!--View Controller-->
+        <!--Player DetailVC-->
         <scene sceneID="m4F-td-16f">
             <objects>
-                <viewController id="dqz-t9-a10" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="dqz-t9-a10" customClass="PlayerDetailVC" customModule="PlayerLister" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iiC-oW-Dd6"/>
                         <viewControllerLayoutGuide type="bottom" id="ugc-gn-hix"/>
@@ -84,8 +84,91 @@
                     <view key="view" contentMode="scaleToFill" id="6F3-k0-58Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6vj-PV-N8L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tki-f5-Pme">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="639"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dHF-j4-jKn">
+                                                <rect key="frame" x="67.5" y="0.0" width="240" height="240"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="240" id="2Z4-0y-kDz"/>
+                                                    <constraint firstAttribute="width" constant="240" id="OWb-0d-3sh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkh-wr-W4X">
+                                                <rect key="frame" x="141.5" y="255" width="92" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d1-hJ-czL">
+                                                <rect key="frame" x="136" y="312" width="103" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="160" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhO-r6-CD4">
+                                                <rect key="frame" x="158" y="369" width="59" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ls-uB-ioV">
+                                                <rect key="frame" x="145.5" y="426" width="84.5" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUo-6P-V4T">
+                                                <rect key="frame" x="145.5" y="483" width="84.5" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eQ-cy-hse">
+                                                <rect key="frame" x="158.5" y="540" width="58" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuw-lK-4B0">
+                                                <rect key="frame" x="158.5" y="597" width="58" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tki-f5-Pme" firstAttribute="top" secondItem="6vj-PV-N8L" secondAttribute="top" id="5f8-lY-cv0"/>
+                                    <constraint firstItem="tki-f5-Pme" firstAttribute="width" secondItem="6vj-PV-N8L" secondAttribute="width" id="Kts-JQ-leK"/>
+                                    <constraint firstAttribute="bottom" secondItem="tki-f5-Pme" secondAttribute="bottom" id="gTe-ct-SEF"/>
+                                    <constraint firstItem="tki-f5-Pme" firstAttribute="leading" secondItem="6vj-PV-N8L" secondAttribute="leading" id="pWD-5H-LV6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6vj-PV-N8L" firstAttribute="top" secondItem="iiC-oW-Dd6" secondAttribute="bottom" id="HtR-kA-dDq"/>
+                            <constraint firstAttribute="trailing" secondItem="6vj-PV-N8L" secondAttribute="trailing" id="Uer-8t-HVh"/>
+                            <constraint firstItem="ugc-gn-hix" firstAttribute="top" secondItem="6vj-PV-N8L" secondAttribute="bottom" id="ajb-YJ-xkV"/>
+                            <constraint firstItem="6vj-PV-N8L" firstAttribute="leading" secondItem="6F3-k0-58Q" secondAttribute="leading" id="jbU-Ja-Fsu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="age" destination="iuw-lK-4B0" id="DPc-NR-8NR"/>
+                        <outlet property="age1" destination="9eQ-cy-hse" id="Nwc-Yr-PSZ"/>
+                        <outlet property="height" destination="lhO-r6-CD4" id="s3X-MH-0s9"/>
+                        <outlet property="height1" destination="5d1-hJ-czL" id="ZeP-Kb-Maf"/>
+                        <outlet property="image" destination="dHF-j4-jKn" id="OaP-5d-qT0"/>
+                        <outlet property="name" destination="Xkh-wr-W4X" id="hOp-Ci-Woe"/>
+                        <outlet property="team" destination="CUo-6P-V4T" id="eyA-ZO-Gld"/>
+                        <outlet property="team1" destination="9ls-uB-ioV" id="6yk-Ww-bJB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRx-FJ-Z6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,4 +209,7 @@
             <point key="canvasLocation" x="-36" y="607"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="messi.jpg" width="900" height="750"/>
+    </resources>
 </document>

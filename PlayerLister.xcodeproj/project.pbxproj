@@ -14,6 +14,11 @@
 		9009CD471E49153B00D8C090 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD461E49153B00D8C090 /* Player.swift */; };
 		9009CD491E49181200D8C090 /* ronaldo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD481E49181200D8C090 /* ronaldo.jpg */; };
 		9009CD4B1E491BD200D8C090 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD4A1E491BD200D8C090 /* PlayerVC.swift */; };
+		9009CD501E49227800D8C090 /* messi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD4C1E49227800D8C090 /* messi.jpg */; };
+		9009CD511E49227800D8C090 /* pepe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD4D1E49227800D8C090 /* pepe.jpg */; };
+		9009CD521E49227800D8C090 /* ramos.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD4E1E49227800D8C090 /* ramos.jpg */; };
+		9009CD531E49227800D8C090 /* suares.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9009CD4F1E49227800D8C090 /* suares.jpg */; };
+		9009CD551E49275200D8C090 /* PlayerDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9009CD541E49275200D8C090 /* PlayerDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		9009CD461E49153B00D8C090 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		9009CD481E49181200D8C090 /* ronaldo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ronaldo.jpg; sourceTree = "<group>"; };
 		9009CD4A1E491BD200D8C090 /* PlayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		9009CD4C1E49227800D8C090 /* messi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = messi.jpg; sourceTree = "<group>"; };
+		9009CD4D1E49227800D8C090 /* pepe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pepe.jpg; sourceTree = "<group>"; };
+		9009CD4E1E49227800D8C090 /* ramos.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ramos.jpg; sourceTree = "<group>"; };
+		9009CD4F1E49227800D8C090 /* suares.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = suares.jpg; sourceTree = "<group>"; };
+		9009CD541E49275200D8C090 /* PlayerDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				9009CD4A1E491BD200D8C090 /* PlayerVC.swift */,
+				9009CD541E49275200D8C090 /* PlayerDetailVC.swift */,
+				9009CD4C1E49227800D8C090 /* messi.jpg */,
+				9009CD4D1E49227800D8C090 /* pepe.jpg */,
+				9009CD4E1E49227800D8C090 /* ramos.jpg */,
+				9009CD4F1E49227800D8C090 /* suares.jpg */,
+				9009CD481E49181200D8C090 /* ronaldo.jpg */,
 				9009CD461E49153B00D8C090 /* Player.swift */,
 				9009CD341E49125200D8C090 /* AppDelegate.swift */,
-				9009CD481E49181200D8C090 /* ronaldo.jpg */,
 				9009CD381E49125200D8C090 /* Main.storyboard */,
 				9009CD3B1E49125200D8C090 /* Assets.xcassets */,
 				9009CD3D1E49125200D8C090 /* LaunchScreen.storyboard */,
@@ -131,9 +146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9009CD3F1E49125200D8C090 /* LaunchScreen.storyboard in Resources */,
+				9009CD511E49227800D8C090 /* pepe.jpg in Resources */,
+				9009CD521E49227800D8C090 /* ramos.jpg in Resources */,
 				9009CD491E49181200D8C090 /* ronaldo.jpg in Resources */,
+				9009CD531E49227800D8C090 /* suares.jpg in Resources */,
 				9009CD3C1E49125200D8C090 /* Assets.xcassets in Resources */,
 				9009CD3A1E49125200D8C090 /* Main.storyboard in Resources */,
+				9009CD501E49227800D8C090 /* messi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9009CD551E49275200D8C090 /* PlayerDetailVC.swift in Sources */,
 				9009CD4B1E491BD200D8C090 /* PlayerVC.swift in Sources */,
 				9009CD471E49153B00D8C090 /* Player.swift in Sources */,
 				9009CD351E49125200D8C090 /* AppDelegate.swift in Sources */,

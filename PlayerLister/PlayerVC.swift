@@ -8,17 +8,27 @@
 
 import UIKit
 
-class PlayerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PlayerVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISplitViewControllerDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
     var players = Player.createPlayers()
+    var selectedPlayer = Player()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        self.splitViewController?.preferredDisplayMode = .allVisible
+        self.splitViewController?.delegate = self
+        
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        
+        return true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +48,14 @@ class PlayerVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let player = self.players[indexPath.row]
+        self.selectedPlayer = player
         self.performSegue(withIdentifier: "moveToDetail", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailVC = segue.destination as! PlayerDetailVC
+        detailVC.player = self.selectedPlayer
     }
 
 
